@@ -1,0 +1,107 @@
+/*listenin stili oluşturulur*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3d638ad0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+}
+
+ /* Listeyi vertical hale getirir*/
+li {
+    display:inline-block;
+}
+
+/*liste elemanlarını bloklar haline getirir ve aralarındaki stilli düzenler*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+}
+/*listedeki herhangi bir elemanın üstüne gelindiğinde rengi değişitrir*/
+li a:hover{
+    background-color:#04AA6D; 
+}
+
+/*açılır listenin içerisindeki elemanlarının yerini sabitler.*/
+ul li ul {
+    background-color:#2c3e50;
+    display:none;
+    position:absolute;
+    width:155px;
+    font-size: 20px;
+}
+
+/*açılır listedeki elemaının üstüne gelindiğinde rengi değiştirir*/
+ul li:hover ul{
+    display:block;
+}
+
+li ul li {
+    display:block; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3d638a11;
+
+}
+
+h1{
+    text-align: center;
+}
+
+/*eklendiği komponenti center align yapar*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 27%
+  }
+
+p{
+    background-color:#3d638a54;
+    padding: 40px 50px;
+    text-align: center;
+    font-size: 28px;
+}
+
+/*eklendiği elementin rengini değiştirir*/
+.active {
+    background-color: #04AA6D;
+  }
+/* eklendiği elementin sağına sınır çeker*/
+  li {
+    border-right: 1px solid #bbb;
+  }
+  /*eklendiği listenin son elemanına border çekilmesini engeller*/
+  li:last-child {
+    border-right: none;
+  }
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  /*eklendiği elemanı kolonlara ayırır*/
+  .column {
+    float: left;
+    width: 23%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
